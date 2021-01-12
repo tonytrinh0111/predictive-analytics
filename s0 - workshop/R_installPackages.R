@@ -1,0 +1,16 @@
+## Run this code in R to install packages required in Predictive Analytics
+install.packages(c("tidyverse",
+                   "Metrics",
+                   "forecast",
+                   "rpart",
+                   "rpart.plot",
+                   "vip",
+                   "neuralnet",
+                   "NeuralNetTools",
+                   "factoextra",
+                   "clue",
+                   "caret",
+                   "randomForest",
+                   "mboost",
+                   "e1071"),
+                 dependencies=TRUE)

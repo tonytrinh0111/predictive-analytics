@@ -1,0 +1,26 @@
+---
+title: "syndicate task 1 Notebook"
+output: html_notebook
+---
+
+```{r}
+set.seed(123)
+train_index <- sample(1:nrow(df), 0.8 * nrow(df))
+
+# Split data into training and testing set 
+trainData <- df[train_index,]
+testData <- df[-train_index,]
+
+#############################################################################
+#Fit the regression model for Price on all available predictors
+fit1 <- lm(QS~., data = trainData)
+fit1Summary = summary(fit1)
+fit1Summary
+
+```
+
+```{r}
+
+```
+
+
